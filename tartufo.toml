@@ -4,6 +4,7 @@ regex = true
 entropy = true
 exclude-path-patterns = [
  {path-pattern = 'tartufo\.toml', reason = 'tartufo file'},
+ {path-pattern = 'package-lock\.json', reason = 'Node package lock file'},
 ]
 exclude-signatures = [
 ]
