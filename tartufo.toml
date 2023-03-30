@@ -1,0 +1,9 @@
+[tool.tartufo]
+repo-path = "."
+regex = true
+entropy = true
+exclude-path-patterns = [
+ {path-pattern = 'tartufo\.toml', reason = 'tartufo file'},
+]
+exclude-signatures = [
+]
