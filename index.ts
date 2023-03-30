@@ -16,6 +16,11 @@ server.post("/", async function (req, res) {
   const headers = req.headers;
 
   // 🎯 Step 1: Exit early if payload does not contain necessary input.
+  if (payload.action !== "opened" || !payload.installation) {
+    res.send("Not Accurate"); // Doesn't matter, can be any response
+  }
+
+  console.log("Step 1 Complete");
 
   // 🎯 Step 2: Create GitHub Octokit Client. Hint - https://github.com/octokit/app.js/#appgetinstallationoctokit
 
