@@ -10,6 +10,8 @@ Build PR meme generator github action. When someone **creates** a PR, our app wi
 
 On purposely not using [probot](https://probot.github.io/docs/README/) to demonstrate bit of internal details.
 
+![Screen Shot](./img/github-app-screenshot.png)
+
 ## 💻 Instruction
 
 1. Navigate to https://smee.io/ click "Start a new channel".
@@ -42,7 +44,7 @@ On purposely not using [probot](https://probot.github.io/docs/README/) to demons
    ```bash
    npx smee-client -u <REPLACE_WITH_YOUR_SMEE_URL> --port <REPLACE_WITH_YOUR_ENV_PORT>
    ```
-1. Install the application you created on a account level.
+1. Install the application you created on an account level.
 1. Test integration by creating PR.
 1. Add Webhook secret validation using `verify` in `index.ts`.
    - Utilize command like `openssl rand -base64 33`
