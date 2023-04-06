@@ -27,6 +27,7 @@ On purposely not using [probot](https://probot.github.io/docs/README/) to demons
    ```bash
    npm i
    ```
+1. Install the application you created on an account level.
 1. Navigate to [index.ts](./index.ts) to get started with coding.
 1. Once ready, run `npm start` in Terminal A, to start GitHub App Webhook API.
 
@@ -44,7 +45,6 @@ On purposely not using [probot](https://probot.github.io/docs/README/) to demons
    ```bash
    npx smee-client -u <REPLACE_WITH_YOUR_SMEE_URL> --port <REPLACE_WITH_YOUR_ENV_PORT>
    ```
-1. Install the application you created on an account level.
 1. Test integration by creating PR.
 1. Add Webhook secret validation using `verify` in `index.ts`.
    - Utilize command like `openssl rand -base64 33`
